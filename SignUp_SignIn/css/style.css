@@ -1,0 +1,155 @@
+:root{
+    --color-shopee:#ee4d2d;
+    --color-border:#dadce0;
+}
+
+header.sign_up{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.header_sign_up{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_sign_up .logo_sp{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.header_sign_up .logo_sp svg{
+    width: 150px;
+}
+.header_sign_up .logo_sp p{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.header_sign_up a{
+    text-decoration: none;
+    color: var(--color-shopee);
+}
+
+.main_sign_up{
+    width: 100%;
+    height: 600px;
+    background-color: var(--color-shopee);
+    display: grid;
+    place-items: center;
+    /* padding: 0 50px; */
+}
+
+.main_sign_up .form_sign_up{
+    width: 1000px;
+    height: 600px;
+    background-image: url(/SignUp_SignIn/img/background_signUP.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main_sign_up .form_sign_up form{
+    width: 400px;
+    height: 430px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+.main_sign_up .form_sign_up form p:first-child{
+    font-size: 20px;
+}
+.main_sign_up .form_sign_up form input, .main_sign_up .form_sign_up form button{
+    width: 340px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+.main_sign_up .form_sign_up form input{
+    border: 1px solid var(--color-border);
+    padding: 0 1rem;
+    outline: none;
+}
+.main_sign_up .form_sign_up form input:focus{
+    border: 1px solid black;
+}
+.main_sign_up .form_sign_up form button{
+    background-color: var(--color-shopee);
+    border: 1px solid var(--color-shopee);
+    opacity: .6;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: no-drop;
+}
+
+.main_sign_up .form_sign_up form .the_line .line{
+    width: 100%;
+    height: 0;
+    border-top: 1px solid var(--color-border);
+    margin-top: 30px;
+}
+.main_sign_up .form_sign_up form .the_line p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--color-border);
+    transform: translate(140px,-18px);
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+
+.main_sign_up .form_sign_up form .order_sign_up{
+    display: flex;
+    justify-content: center;
+}
+
+.main_sign_up .form_sign_up form .order_sign_up .with_od{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 35px;
+    border: 1px solid var(--color-border);
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.main_sign_up .form_sign_up form .order_sign_up .with_od:hover{
+    background-color: rgba(225, 225, 225, .2);
+}
+.main_sign_up .form_sign_up form .order_sign_up img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.main_sign_up .form_sign_up form .parg_su{
+    margin: 30px auto ;
+    text-align: center;
+    width: 90%;
+}
+.main_sign_up .form_sign_up form .parg_su p{
+    font-size: 12px;
+    line-height: 15px;
+}
+.main_sign_up .form_sign_up form .parg_su p:last-child{
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--color-border);
+}
+.main_sign_up .form_sign_up form .parg_su p:last-child a{
+    font-size: 14px;
+    
+}
+.main_sign_up .form_sign_up form .parg_su p a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-shopee);
+}
