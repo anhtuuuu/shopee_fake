@@ -1,0 +1,64 @@
+:root{
+    --color-border-sqare:#ffbf00;
+}
+
+
+.top_sign_in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_sign_in .box_note{
+    display: flex;
+    align-items: center;
+}
+.top_sign_in .box_note .square{
+    width: 160px;
+    height: 55px;
+    border: 3px solid var(--color-border-sqare);
+    background-color: #fefaec;
+    color: var(--color-border-sqare);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.top_sign_in .box_note .trigle{
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid var(--color-border-sqare);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.top_sign_in .box_note .trigle::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 9px solid #fefaec;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    transform: translateX(-13px);
+
+}
+
+.helping{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.helping a{
+    text-decoration: none;
+    color: #0070cb;
+}
+.main_sign_in .form_sign_up form{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}

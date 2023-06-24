@@ -28,11 +28,13 @@ header.home_index{
     display: grid;
     place-items: center;
     width: 100%;
+    background: linear-gradient(to bottom, var(--bg-start) 25%, var(--bg-end));
+
     position: fixed;
     top: 0;
     z-index: 99999;
 }
-main{
+main.home{
     width: 100%;
     display: grid;
     place-items: center;
@@ -43,7 +45,7 @@ main{
     border-bottom: 5px solid var(--bg-start);
 }
 .on_top{
-    width: 100%;
+    width: 1280px;
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
@@ -189,7 +191,7 @@ cursor: pointer;
 
 /* Header */
 .header{
-    width: 100%;    
+    width: 1280px;    
     background: linear-gradient(to bottom, var(--bg-start), var(--bg-end));
     display: flex;
     justify-content: space-between;
