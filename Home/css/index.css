@@ -29,7 +29,6 @@ header.home_index{
     place-items: center;
     width: 100%;
     background: linear-gradient(to bottom, var(--bg-start) 25%, var(--bg-end));
-
     position: fixed;
     top: 0;
     z-index: 99999;
@@ -311,7 +310,7 @@ cursor: pointer;
     height: 100px;
 }
 
-.shopping_cart i:hover ~ .notice_cart{
+.shopping_cart #hidden_cart:hover ~ .notice_cart{
     display: grid;
 }
 

@@ -47,7 +47,7 @@ header.sign_up{
 .main_sign_up .form_sign_up{
     width: 1000px;
     height: 600px;
-    background-image: url(/SignUp_SignIn/img/background_signUP.png);
+    background-image: url(../img/background_signUP.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;

@@ -70,7 +70,7 @@ var count = 1;
                 titleFix.style.setProperty('z-index','99');
             }
             else{
-                titleFix.style.removeProperty('position','fix');
+                titleFix.style.removeProperty('position','fixed');
                 titleFix.style.removeProperty('top','0px');
                 titleFix.style.removeProperty('z-index','99');
 

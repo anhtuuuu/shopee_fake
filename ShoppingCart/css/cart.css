@@ -1,0 +1,530 @@
+:root{
+    --color-link:#2e69a3;
+    --color-star:#ee4d2d;
+    --bg-start:#F53D2D;
+    --bg-end:#FF6633;
+    --the-line:#FA735D;
+    --bg-flash:#EE4E2E;
+    --border:rgba(231, 231, 231,.8);
+    --border-bold:rgb(202, 202, 202);
+    --bg-main:#F5F5F5;
+    --color-mall:#d0011b;
+    --color-mall2:#7d0110;
+    --color-sale-off:#ffd839;
+    --color-range:#ffbda6;
+    --bgc-btn:#ffeee8;
+    --bgc-btn-rbga:rgba(255, 238, 232, .5);
+}
+main.main_cart{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-main);
+    padding: 30px 0;
+    box-shadow: inset 0 0 2px rgb(78, 78, 78);
+    border-bottom: 5px solid var(--bg-start);
+}
+header.cart{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background: var(--bg-start);
+    top: 0;
+    z-index: 99999;
+}
+
+
+/* search */
+
+.search_cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    padding: 15px 30px;
+    background-color: #fff;
+}
+.search_cart .logo_shopee_cart {
+    display: flex;
+    align-items: center;
+}
+.search_cart .logo_shopee_cart a{
+    text-decoration: none;
+}
+.search_cart .logo_shopee_cart svg{
+    width: 150px;
+    margin-right: 20px;
+}
+.search_cart .logo_shopee_cart  p{
+    font-size: 20px;
+    color: var(--color-star);
+    border-left: 1px solid var(--color-star);
+    padding: 5px 20px;
+    transform: translateY(5px);
+
+}
+.search_cart .search_rods{
+    position: relative;
+    display: flex;
+}
+.search_cart .search_rods input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid var(--color-star);
+    outline: none;
+    padding: 0 10px;
+    border-radius: 3px 0 0 3px;
+}
+.search_cart .search_rods button{
+    width: 80px;
+    height: 40px;
+    background-color: var(--color-star);
+    border: none;
+    cursor: pointer;
+}
+.search_cart .search_rods button:hover{
+    opacity: .9;
+}
+.search_cart .search_rods button svg{
+    width: 15px;
+}
+.search_cart .new_voucher{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: 40px;
+    padding: 0 10px;
+    transform: translateY(44px);
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--border-bold);
+    cursor: pointer;
+    display: none;
+}
+.search_cart .new_voucher:hover{
+    background-color: var(--bg-main);
+}
+.search_cart .new_voucher img{
+    width: 120px;
+}
+.search_cart .search_rods input:focus ~ .new_voucher{
+    display: flex;
+}
+
+/* main cart */
+
+.note_cart{
+    width: 1280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px;
+    border: 1px solid #f7e6b5;
+    margin-bottom: 10px;
+}
+.note_cart svg{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/*  */
+.choose_all_sp{
+    width: 1280px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: relative;
+    border-bottom: 1px solid var(--bg-main);
+}
+.choose_all_sp .check_all{
+    display: flex;
+    align-items: center;
+}
+input.check_sp{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-star);
+}
+.choose_all_sp .points{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    color: #888;
+}
+
+.shop_cart .info_shop{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid var(--bg-main);
+}
+.shop_cart .info_shop a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+
+}
+.shop_cart .info_shop p{
+    margin: 0 10px;
+}
+
+.choose_all_sp .check_all .sp_1{
+    display: flex;
+    width: 50%;
+}
+.choose_all_sp .check_all .sp_1 a img{
+    width: 80px;
+    height: 80px;
+}
+.choose_all_sp .check_all .sp_1 .mota{
+    margin-left: 10px;
+}
+.choose_all_sp .check_all .sp_1 .mota a{
+    text-decoration: none;
+    color:#000 ;
+    font-size: 15px;
+}
+.choose_all_sp .check_all .sp_1 .mota img{
+    width: 200px;
+    margin-top: 10px;
+}
+.choose_all_sp .classify{
+    cursor: pointer;
+    color: #888;
+}
+.choose_all_sp #clsf,#clsf2,#clsf3{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.choose_all_sp .choose_classify{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    transform: translate(300px,150px);
+    display: none;
+}
+.choose_all_sp .choose_classify .triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid var(--border-bold);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+.choose_all_sp .choose_classify .squale{
+    width: 365px;
+    height: 235px;
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--border-bold);
+    padding: 20px;
+}
+.choose_all_sp .choose_classify .squale > p{
+    font-size: 15px;
+    color: #888;
+}
+.choose_all_sp .choose_classify .squale .choose{
+    display: flex;
+    flex-wrap: wrap;
+}
+.choose_all_sp .choose_classify .squale .choose p{
+    border: 1px solid var(--border-bold);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #666;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.choose_all_sp .choose_classify .squale .choose p:first-child{
+    border: 1px solid var(--color-star);
+    color: var(--color-star);
+    position: relative;
+}
+.choose_all_sp .choose_classify .squale .choose p:first-child .tick{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid var(--color-star);
+    border-right: 8px solid var(--color-star);
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+
+}
+.choose_all_sp .choose_classify .squale .choose p:first-child .tick i{
+    font-size: 10px;
+    transform: translateY(-5px);
+}
+.choose_all_sp .choose_classify .squale .choose p:hover{
+    border: 1px solid var(--color-star);
+    color: var(--color-star);
+}
+.choose_all_sp #clsf:focus ~ .choose_classify{
+    display: grid;
+    z-index: 99;
+}
+.choose_all_sp #clsf2:focus ~ .choose_classify{
+    display: grid;
+    z-index: 99;
+}
+.choose_all_sp #clsf3:focus ~ .choose_classify{
+    display: grid;
+    z-index: 99;
+}
+.choose_all_sp .choose_classify .squale .btn_classify{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.choose_all_sp .choose_classify .squale .btn_classify button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    margin: 5px;    
+    cursor: pointer;
+    background-color: #fff;
+}
+.choose_all_sp .choose_classify .squale .btn_classify button:hover{
+    opacity: .8;
+}
+.choose_all_sp .choose_classify .squale .btn_classify button:first-child:hover{
+    background-color: var(--bg-main);
+}
+.choose_all_sp .choose_classify .squale .btn_classify button:last-child{
+    background-color: var(--color-star);
+    color: #fff;
+}
+
+
+.choose_all_sp  .points .amount{
+    display: flex;
+}
+.choose_all_sp  .points .amount input{
+    width: 50px;
+    height: 30px;
+    border: 1px solid var(--border-bold);
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    text-align: center;
+}
+.choose_all_sp  .points .amount #minus, #add{
+    border: 1px solid var(--border-bold);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.choose_all_sp .points .operation{
+    text-align: center;
+    line-height: 20px;
+}
+.choose_all_sp .points .operation a{
+    text-decoration: none;
+    color: #000;
+}
+.choose_all_sp .points .operation > a:hover{
+    color: var(--color-star);
+}
+.choose_all_sp .points .operation .search_same{
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+.choose_all_sp .points .operation .search_same a{
+    color: var(--color-star);
+    padding-right: 5px;
+}
+
+.shop_cart .bottom_shop{
+    display: flex;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.shop_cart .bottom_shop svg{
+    margin-right: 10px;
+}
+.shop_cart .bottom_shop a{
+    text-decoration: none;
+    color: var(--color-link);
+    margin-left: 10px;
+}
+
+/* buy now */
+.buy_now_sp{
+    width: 1280px;
+    background-color: #fff;
+    margin-top: 10px;   
+    box-shadow: 0 0 5px var(--border-bold);
+    position: fixed; 
+    bottom: 0;
+    z-index: 90;
+}
+.buy_now_sp .choose_voucher{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px dashed var(--border-bold);
+}
+.buy_now_sp .choose_voucher .shopee_voucher{
+    display: flex;
+    align-items: center;
+}
+.buy_now_sp .choose_voucher .shopee_voucher svg{
+    width: 20px;
+    margin-right: 10px;
+}
+.buy_now_sp .choose_voucher .shopee_voucher p{
+    font-size: 16px;
+    color: #666;    
+}
+.buy_now_sp .choose_voucher a{
+    text-decoration: none;
+    color: var(--color-link);
+    margin-left: 150px;
+    text-transform: capitalize;
+}
+
+
+.buy_now_sp .coint_shopee{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    opacity: .4;
+}
+.buy_now_sp .coint_shopee input{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-star);
+    cursor:no-drop;
+}
+.buy_now_sp .coint_shopee .coint{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.buy_now_sp .coint_shopee .coint svg{
+    width: 20px;
+    margin-right: 10px;
+}
+.buy_now_sp .coint_shopee #not_choose{
+    margin-right: 150px;
+    color: #666;
+}
+.buy_now_sp .coint_shopee #not_choose span{
+    border: 1px solid #666;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 0 3px;
+}
+
+.buy_now_sp .coint_shopee .price_coint p{
+    font-size: 18px;
+    color: #666;
+}
+
+
+.buy_now_sp .buy_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px dashed var(--border-bold);
+
+}
+.buy_now_sp .buy_items input{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-star);
+}
+.buy_now_sp .buy_items a{
+    text-decoration: none;
+    color: #888;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.buy_now_sp .buy_items a:nth-child(5){
+    color: var(--color-star);
+}
+.buy_now_sp .buy_items .sum_pay{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.buy_now_sp .buy_items .sum_pay p{
+    font-size: 18px;
+}
+.buy_now_sp .buy_items .sum_pay p:last-child{
+    color: var(--color-star);
+    font-size: 25px;
+    margin: 0 10px;
+}
+.buy_now_sp .buy_items button{
+    width: 210px;
+    height: 40px;
+    background-color: var(--color-star);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.buy_now_sp .buy_items button:hover{
+    opacity: .9;
+}
+
+.chat{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-star);
+    border-radius: 5px;
+    z-index: 100;
+}
+.chat a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+.chat a i{
+    font-size: 20px;
+    margin: 15px 5px;
+}
+.chat a p{
+    font-size: 20px;
+    color: #fff;margin: 15px 0;
+}
+.chat .red_note{
+    width: 20px ;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-star);
+    transform: translate(80px,-10px);
+    text-align: center;
+    color: #fff;
+}
